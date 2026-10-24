@@ -1,0 +1,10 @@
+export const fcfa=n=>new Intl.NumberFormat("fr-FR").format(n||0)+" FCFA";
+export const CAT={coiffure:"Coiffure",beaute:"Beauté",spa:"Spa & bien-être",coaching:"Coaching",sante:"Santé",auto:"Auto",autre:"Autre"};
+export const CAT_ICON={coiffure:"✂️",beaute:"💅",spa:"🧖",coaching:"🏋️",sante:"🦷",auto:"🚗",autre:"✨"};
+export const nowLocal=()=>new Date(Date.now()+36e5).toISOString().slice(0,16);
+export const today=()=>nowLocal().slice(0,10);
+export const addDays=(d,n)=>new Date(Date.parse(d+"T12:00:00Z")+n*864e5).toISOString().slice(0,10);
+export const dLabel=(d,o={weekday:"long",day:"numeric",month:"long"})=>new Date(d+"T12:00:00Z").toLocaleDateString("fr-FR",{...o,timeZone:"UTC"});
+export const hm=s=>s.slice(11,16).replace(":","h");
+export const STATUS={pending:["En attente","bg-amber-100 text-amber-800"],confirmed:["Confirmée","bg-emerald-100 text-emerald-800"],completed:["Terminée","bg-slate-100 text-slate-700"],cancelled:["Annulée","bg-rose-100 text-rose-700"],no_show:["Absent","bg-orange-100 text-orange-800"]};
+export const DAYS=["Dimanche","Lundi","Mardi","Mercredi","Jeudi","Vendredi","Samedi"];

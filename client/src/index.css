@@ -1,0 +1,7 @@
+@tailwind base;@tailwind components;@tailwind utilities;
+body{margin:0;background:#FBFAF7;color:#10201F;font-family:"Inter Variable",sans-serif;-webkit-font-smoothing:antialiased}
+::selection{background:#FF7A59;color:#fff}
+::-webkit-scrollbar{width:9px;height:9px}::-webkit-scrollbar-thumb{background:#c9d4c8;border-radius:9px}
+:focus-visible{outline:2px solid #FF7A59;outline-offset:2px}
+.card{background:#fff;border:1px solid rgba(16,32,31,.08);border-radius:1.25rem;box-shadow:0 1px 2px rgba(16,32,31,.04),0 8px 24px -12px rgba(16,32,31,.12)}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}

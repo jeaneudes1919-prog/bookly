@@ -1,0 +1,16 @@
+{
+  "name": "bookly",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "setup": "npm install && npm install --prefix server && npm install --prefix client",
+    "dev": "concurrently -n api,web -c cyan,magenta \"npm run dev --prefix server\" \"npm run dev --prefix client\"",
+    "seed": "npm run seed --prefix server",
+    "build": "npm run build --prefix client",
+    "test": "npm test --prefix server && npm test --prefix client",
+    "smoke": "bash server/scripts/smoke.sh"
+  },
+  "devDependencies": {
+    "concurrently": "^9.0.1"
+  }
+}
